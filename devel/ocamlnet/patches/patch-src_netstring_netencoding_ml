@@ -1,0 +1,28 @@
+$OpenBSD$
+--- src/netstring/netencoding.ml.orig	Wed Feb 29 19:02:52 2012
++++ src/netstring/netencoding.ml	Thu Jun  7 12:25:38 2012
+@@ -973,7 +973,7 @@ module Url = struct
+       s1 ;;
+ 
+   let url_split_re =
+-    Netstring_str.regexp "[&=]";;
++    Netstring_str.regexp "[&;=]";;
+ 
+   let mk_url_encoded_parameters nv_pairs =
+     String.concat "&"
+@@ -992,6 +992,7 @@ module Url = struct
+       match tl with
+ 	  Netstring_str.Text name :: Netstring_str.Delim "=" :: Netstring_str.Text value :: tl' ->
+ 	    (decode name, decode value) :: parse_next tl'
++	| Netstring_str.Text name :: Netstring_str.Delim "=" :: Netstring_str.Delim ";" :: tl'
+ 	| Netstring_str.Text name :: Netstring_str.Delim "=" :: Netstring_str.Delim "&" :: tl' ->
+ 	    (decode name, "") :: parse_after_amp tl'
+ 	| Netstring_str.Text name :: Netstring_str.Delim "=" :: [] ->
+@@ -1001,6 +1002,7 @@ module Url = struct
+     and parse_next tl =
+       match tl with
+ 	  [] -> []
++	| Netstring_str.Delim ";" :: tl'
+ 	| Netstring_str.Delim "&" :: tl' ->
+ 	    parse_after_amp tl'
+ 	| _ ->
