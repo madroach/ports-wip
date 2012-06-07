@@ -1,5 +1,6 @@
 @comment $OpenBSD$
 %%native%%
+@bin lib/ocaml/site-lib/batteries/ocaml
 lib/ocaml/site-lib/batteries/
 lib/ocaml/site-lib/batteries/META
 lib/ocaml/site-lib/batteries/batArg.cmi
@@ -194,6 +195,7 @@ lib/ocaml/site-lib/batteries/batteries_print.cmi
 lib/ocaml/site-lib/batteries/batteries_uni.cma
 lib/ocaml/site-lib/batteries/batteries_uni.cmi
 lib/ocaml/site-lib/batteries/battop.ml
+lib/ocaml/site-lib/batteries/ocamlinit
 lib/ocaml/site-lib/batteries/pa_comprehension.cmo
 lib/ocaml/site-lib/batteries/pa_llist.cmo
 lib/ocaml/site-lib/batteries/pa_strings.cma

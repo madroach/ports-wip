@@ -3,11 +3,13 @@
 COMMENT=	OCaml Batteries Included - OCaml foundation library
 CATEGORIES=	devel
 
-V=		1.4.2
+V=		1.4.3
+# $N changes with every release, too.
+N=		884
 DISTNAME=	batteries-$V
 PKGNAME=	ocaml-batteries-$V
 
-MASTER_SITES=	https://forge.ocamlcore.org/frs/download.php/853/
+MASTER_SITES=	https://forge.ocamlcore.org/frs/download.php/$N/
 
 HOMEPAGE=	http://batteries.forge.ocamlcore.org/
 

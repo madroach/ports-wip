@@ -4,9 +4,11 @@ COMMENT=	Unit test framework for OCaml
 CATEGORIES=	devel
 
 V=		1.1.1
+# $N changes with every release, too.
+N=		762
 DISTNAME=	ounit-$V
 
-MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/762/
+MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/$N/
 
 HOMEPAGE=	http://ounit.forge.ocamlcore.org/
 
