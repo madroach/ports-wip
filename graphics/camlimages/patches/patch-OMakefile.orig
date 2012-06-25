@@ -1,0 +1,12 @@
+$OpenBSD$
+--- OMakefile.orig	Fri Jun 22 13:24:22 2012
++++ OMakefile	Fri Jun 22 13:27:23 2012
+@@ -162,7 +162,7 @@ print_configured() =
+     SUPPORTED_FORMATS+=ps
+     export
+ 
+-  SUPPORT_LABLGTK2 = $(Check_ocamlfind_package lablgtk2)
++  SUPPORT_LABLGTK2 = false
+   if $(SUPPORT_LABLGTK2)
+     SUPPORTED_NON_FORMATS+=lablgtk2
+     OCAMLPACKS+=lablgtk2
