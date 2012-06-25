@@ -40,7 +40,7 @@ REGRESS_TARGET=	test
 INSTALL_TARGET=	install install-doc
 
 
-pre-install:
+pre-fake:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
 
 post-install:

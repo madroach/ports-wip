@@ -35,7 +35,7 @@ REGRESS_TARGET=	test
 pre-configure:
 	chmod a+x ${WRKSRC}/configure
 
-pre-install:
+pre-fake:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
 
 

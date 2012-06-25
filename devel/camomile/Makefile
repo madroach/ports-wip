@@ -32,8 +32,8 @@ USE_GMAKE=	Yes
 ALL_TARGET=	all dochtml
 
 
-pre-install:
-	        ${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
+pre-fake:
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/camomile/html/

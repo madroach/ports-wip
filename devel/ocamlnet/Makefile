@@ -32,10 +32,10 @@ USE_GMAKE=	Yes
 ALL_TARGET=	all ${MODOCAML_NATIVE:S/Yes/opt/:S/No//}
 
 
-pre-install:
-	        ${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
-	        ${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/stublibs
-	        ln -s ../stublibs ${PREFIX}/lib/ocaml/site-lib/
+pre-fake:
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/site-lib
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/ocaml/stublibs
+	ln -s ../stublibs ${PREFIX}/lib/ocaml/site-lib/
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ocamlnet/html
