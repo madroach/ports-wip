@@ -1,4 +1,5 @@
 @comment $OpenBSD$
+@owner ${DRUPAL_OWNER}
 @group ${DRUPAL_GROUP}
 ${DRUPAL_MODS}insert/
 ${DRUPAL_MODS}insert/LICENSE.txt

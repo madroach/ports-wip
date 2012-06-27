@@ -7,7 +7,5 @@ ${DRUPAL_MODS}tables/LICENSE.txt
 ${DRUPAL_MODS}tables/README.txt
 ${DRUPAL_MODS}tables/tables.css
 ${DRUPAL_MODS}tables/tables.info
-@owner
 ${DRUPAL_MODS}tables/tables.install
-@owner ${DRUPAL_OWNER}
 ${DRUPAL_MODS}tables/tables.module
