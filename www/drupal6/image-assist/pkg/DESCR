@@ -1,0 +1,4 @@
+Image Assist allows users to upload and insert images inline into content. It
+automatically generates an "Add image" link under fields of your choice.
+Clicking the link opens an image browser, displaying all images that have been
+uploaded via the Image module.

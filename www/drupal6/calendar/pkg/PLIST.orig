@@ -1,0 +1,13 @@
+@comment $OpenBSD$
+@owner ${DRUPAL_OWNER}
+@group ${DRUPAL_GROUP}
+${DRUPAL_MODS}acl/
+${DRUPAL_MODS}acl/CHANGELOG.txt
+${DRUPAL_MODS}acl/INSTALL.txt
+${DRUPAL_MODS}acl/LICENSE.txt
+${DRUPAL_MODS}acl/README.txt
+${DRUPAL_MODS}acl/acl.admin.inc
+${DRUPAL_MODS}acl/acl.api.php
+${DRUPAL_MODS}acl/acl.info
+${DRUPAL_MODS}acl/acl.install
+${DRUPAL_MODS}acl/acl.module

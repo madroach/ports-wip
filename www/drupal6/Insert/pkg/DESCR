@@ -1,0 +1,10 @@
+This module changes your forum administration page to allow you to set forums
+private. You can control what user roles can view, edit, delete, and post to
+each forum. You can also give each forum a list of users who have
+administrative access on that forum (AKA moderators).
+
+This module requires the ACL module in order to function.
+
+Forum Access is compatible with the core Forum module, Advanced Forum, and
+Content Access, Domain Access as well as all other well-behaved node access
+modules.

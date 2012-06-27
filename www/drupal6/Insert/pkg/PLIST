@@ -1,0 +1,19 @@
+@comment $OpenBSD$
+@group ${DRUPAL_GROUP}
+${DRUPAL_MODS}insert/
+${DRUPAL_MODS}insert/LICENSE.txt
+${DRUPAL_MODS}insert/README.txt
+${DRUPAL_MODS}insert/includes/
+${DRUPAL_MODS}insert/includes/filefield.inc
+${DRUPAL_MODS}insert/includes/imagecache.inc
+${DRUPAL_MODS}insert/includes/imagefield.inc
+${DRUPAL_MODS}insert/includes/insert.inc
+${DRUPAL_MODS}insert/insert.info
+${DRUPAL_MODS}insert/insert.install
+${DRUPAL_MODS}insert/insert.js
+${DRUPAL_MODS}insert/insert.module
+${DRUPAL_MODS}insert/templates/
+${DRUPAL_MODS}insert/templates/imagecache-insert-image.tpl.php
+${DRUPAL_MODS}insert/templates/insert-image.tpl.php
+${DRUPAL_MODS}insert/templates/insert-link.tpl.php
+${DRUPAL_MODS}insert/templates/insert-widget.tpl.php

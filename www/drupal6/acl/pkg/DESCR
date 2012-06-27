@@ -1,0 +1,9 @@
+The ACL module, short for Access Control List, is an API for other modules
+to create lists of users and give them access to nodes. It has no UI of its
+own and will not do anything by itself, but it is required by the following
+modules
+
+* Content Access (optionally uses ACL to provide by-user access control)
+* Flexi Access
+* Forum Access
+* Image Gallery Access

@@ -1,0 +1,3 @@
+This module will display any Views date field in calendar formats, including
+CCK date fields, node created or updated dates, etc. Switch between year,
+month, and day views. Back and next navigation is provided for all views.

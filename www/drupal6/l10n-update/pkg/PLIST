@@ -1,0 +1,17 @@
+@comment $OpenBSD$
+@group ${DRUPAL_GROUP}
+${DRUPAL_MODS}l10n_update/
+${DRUPAL_MODS}l10n_update/LICENSE.txt
+${DRUPAL_MODS}l10n_update/README.txt
+${DRUPAL_MODS}l10n_update/l10n_update.admin.inc
+${DRUPAL_MODS}l10n_update/l10n_update.api.php
+${DRUPAL_MODS}l10n_update/l10n_update.batch.inc
+${DRUPAL_MODS}l10n_update/l10n_update.check.inc
+${DRUPAL_MODS}l10n_update/l10n_update.drush.inc
+${DRUPAL_MODS}l10n_update/l10n_update.inc
+${DRUPAL_MODS}l10n_update/l10n_update.info
+${DRUPAL_MODS}l10n_update/l10n_update.install
+${DRUPAL_MODS}l10n_update/l10n_update.locale.inc
+${DRUPAL_MODS}l10n_update/l10n_update.module
+${DRUPAL_MODS}l10n_update/l10n_update.parser.inc
+${DRUPAL_MODS}l10n_update/l10n_update.project.inc
