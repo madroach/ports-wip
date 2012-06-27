@@ -1,0 +1,9 @@
+tcpdump should be used to capture traffic
+rather than Wireshark. Wireshark does a good job
+at displaying captured traffic. 
+
+For realtime use
+
+sudo tcpdump -w - ...parameters... | wireshark -i - -k
+
+
