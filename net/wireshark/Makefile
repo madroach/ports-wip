@@ -1,6 +1,6 @@
 # $OpenBSD:$
 COMMENT =		network protocol analyzer
-VERSION =		1.6.0
+VERSION =		1.8.0
 DISTNAME =		wireshark-${VERSION}
 
 SHARED_LIBS +=		wireshark 0.23
@@ -22,9 +22,9 @@ EXTRACT_SUFX =		.tar.bz2
 MASTER_SITES =		http://www.wireshark.org/download/src/ \
 			${MASTER_SITE_SOURCEFORGE:=wireshark/}
 
-WANTLIB += 		c z m pango-1.0 pthread pcap \
-			gdk-x11-2.0 gdk_pixbuf-2.0 gtk-x11-2.0 \
-			glib-2.0 gmodule-2.0 gobject-2.0  gthread-2.0 \
+WANTLIB += 		c z m stdc++ cairo pango-1.0 pangocairo-1.0 pthread \
+			pcap gdk-x11-2.0 gdk_pixbuf-2.0 gtk-x11-2.0 \
+			glib-2.0 gobject-2.0 \
 			lua gpg-error adns gnutls portaudio gcrypt
 
 MODULES = 		lang/python
@@ -37,12 +37,14 @@ BUILD_DEPENDS =		x11/gtk+2 \
 
 RUN_DEPENDS =		${BUILD_DEPENDS}
 
-LIB_DEPENDS =		lang/lua \
-			security/libgpg-error \
+LIB_DEPENDS =		audio/portaudio-svn \
+			devel/pango \
+			graphics/cairo \
+			lang/lua \
 			net/adns \
 			security/gnutls \
-			audio/portaudio-svn \
-			security/libgcrypt
+			security/libgcrypt \
+			security/libgpg-error
 
 USE_GMAKE =		Yes
 USE_LIBTOOL =		Yes

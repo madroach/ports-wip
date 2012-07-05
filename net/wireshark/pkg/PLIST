@@ -4,7 +4,6 @@
 @bin bin/dftest
 @bin bin/dumpcap
 @bin bin/editcap
-bin/idl2wrs
 @bin bin/mergecap
 @bin bin/randpkt
 @bin bin/rawshark
@@ -17,72 +16,10 @@ lib/libwiretap.a
 lib/libwiretap.la
 lib/libwsutil.a
 lib/libwsutil.la
-@lib lib/libwsutil.so.${LIBwsutil_VERSION}
-lib/wireshark/
-lib/wireshark/plugins/
-lib/wireshark/plugins/1.6.0/
-lib/wireshark/plugins/1.6.0/asn1.a
-lib/wireshark/plugins/1.6.0/asn1.la
-lib/wireshark/plugins/1.6.0/asn1.so
-lib/wireshark/plugins/1.6.0/coseventcomm.a
-lib/wireshark/plugins/1.6.0/coseventcomm.la
-lib/wireshark/plugins/1.6.0/coseventcomm.so
-lib/wireshark/plugins/1.6.0/cosnaming.a
-lib/wireshark/plugins/1.6.0/cosnaming.la
-lib/wireshark/plugins/1.6.0/cosnaming.so
-lib/wireshark/plugins/1.6.0/docsis.a
-lib/wireshark/plugins/1.6.0/docsis.la
-lib/wireshark/plugins/1.6.0/docsis.so
-lib/wireshark/plugins/1.6.0/ethercat.a
-lib/wireshark/plugins/1.6.0/ethercat.la
-lib/wireshark/plugins/1.6.0/ethercat.so
-lib/wireshark/plugins/1.6.0/gryphon.a
-lib/wireshark/plugins/1.6.0/gryphon.la
-lib/wireshark/plugins/1.6.0/gryphon.so
-lib/wireshark/plugins/1.6.0/interlink.a
-lib/wireshark/plugins/1.6.0/interlink.la
-lib/wireshark/plugins/1.6.0/interlink.so
-lib/wireshark/plugins/1.6.0/irda.a
-lib/wireshark/plugins/1.6.0/irda.la
-lib/wireshark/plugins/1.6.0/irda.so
-lib/wireshark/plugins/1.6.0/m2m.a
-lib/wireshark/plugins/1.6.0/m2m.la
-lib/wireshark/plugins/1.6.0/m2m.so
-lib/wireshark/plugins/1.6.0/mate.a
-lib/wireshark/plugins/1.6.0/mate.la
-lib/wireshark/plugins/1.6.0/mate.so
-lib/wireshark/plugins/1.6.0/opcua.a
-lib/wireshark/plugins/1.6.0/opcua.la
-lib/wireshark/plugins/1.6.0/opcua.so
-lib/wireshark/plugins/1.6.0/parlay.a
-lib/wireshark/plugins/1.6.0/parlay.la
-lib/wireshark/plugins/1.6.0/parlay.so
-lib/wireshark/plugins/1.6.0/profinet.a
-lib/wireshark/plugins/1.6.0/profinet.la
-lib/wireshark/plugins/1.6.0/profinet.so
-lib/wireshark/plugins/1.6.0/sercosiii.a
-lib/wireshark/plugins/1.6.0/sercosiii.la
-lib/wireshark/plugins/1.6.0/sercosiii.so
-lib/wireshark/plugins/1.6.0/stats_tree.a
-lib/wireshark/plugins/1.6.0/stats_tree.la
-lib/wireshark/plugins/1.6.0/stats_tree.so
-lib/wireshark/plugins/1.6.0/tango.a
-lib/wireshark/plugins/1.6.0/tango.la
-lib/wireshark/plugins/1.6.0/tango.so
-lib/wireshark/plugins/1.6.0/unistim.a
-lib/wireshark/plugins/1.6.0/unistim.la
-lib/wireshark/plugins/1.6.0/unistim.so
-lib/wireshark/plugins/1.6.0/wimax.a
-lib/wireshark/plugins/1.6.0/wimax.la
-lib/wireshark/plugins/1.6.0/wimax.so
-lib/wireshark/plugins/1.6.0/wimaxasncp.a
-lib/wireshark/plugins/1.6.0/wimaxasncp.la
-lib/wireshark/plugins/1.6.0/wimaxasncp.so
 @man man/man1/capinfos.1
 @man man/man1/dftest.1
 @man man/man1/dumpcap.1
 @man man/man1/editcap.1
-@man man/man1/idl2wrs.1
 @man man/man1/mergecap.1
 @man man/man1/randpkt.1
 @man man/man1/rawshark.1
@@ -100,10 +37,13 @@ share/wireshark/console.lua
 share/wireshark/dfilters
 share/wireshark/dftest.html
 share/wireshark/diameter/
+share/wireshark/diameter/Cisco.xml
 share/wireshark/diameter/Ericsson.xml
 share/wireshark/diameter/TGPPGmb.xml
 share/wireshark/diameter/TGPPRx.xml
+share/wireshark/diameter/TGPPS9.xml
 share/wireshark/diameter/TGPPSh.xml
+share/wireshark/diameter/Vodafone.xml
 share/wireshark/diameter/chargecontrol.xml
 share/wireshark/diameter/dictionary.dtd
 share/wireshark/diameter/dictionary.xml
@@ -140,7 +80,6 @@ share/wireshark/help/faq.txt
 share/wireshark/help/getting_started.txt
 share/wireshark/help/overview.txt
 share/wireshark/help/toc
-share/wireshark/idl2wrs.html
 share/wireshark/init.lua
 share/wireshark/ipmap.html
 share/wireshark/manuf
@@ -153,8 +92,12 @@ share/wireshark/radius/dictionary.3com
 share/wireshark/radius/dictionary.3gpp
 share/wireshark/radius/dictionary.3gpp2
 share/wireshark/radius/dictionary.acc
+share/wireshark/radius/dictionary.acme
 share/wireshark/radius/dictionary.airespace
 share/wireshark/radius/dictionary.alcatel
+share/wireshark/radius/dictionary.alcatel-lucent.xylan
+share/wireshark/radius/dictionary.alcatel.esam
+share/wireshark/radius/dictionary.alcatel.sr
 share/wireshark/radius/dictionary.alteon
 share/wireshark/radius/dictionary.altiga
 share/wireshark/radius/dictionary.alvarion
@@ -163,6 +106,7 @@ share/wireshark/radius/dictionary.aptis
 share/wireshark/radius/dictionary.aruba
 share/wireshark/radius/dictionary.ascend
 share/wireshark/radius/dictionary.asn
+share/wireshark/radius/dictionary.audiocodes
 share/wireshark/radius/dictionary.avaya
 share/wireshark/radius/dictionary.azaire
 share/wireshark/radius/dictionary.bay
@@ -198,6 +142,7 @@ share/wireshark/radius/dictionary.gemtek
 share/wireshark/radius/dictionary.h3c
 share/wireshark/radius/dictionary.hp
 share/wireshark/radius/dictionary.huawei
+share/wireshark/radius/dictionary.iea
 share/wireshark/radius/dictionary.infonet
 share/wireshark/radius/dictionary.ipunplugged
 share/wireshark/radius/dictionary.issanni
@@ -214,6 +159,7 @@ share/wireshark/radius/dictionary.merit
 share/wireshark/radius/dictionary.microsoft
 share/wireshark/radius/dictionary.mikrotik
 share/wireshark/radius/dictionary.motorola
+share/wireshark/radius/dictionary.motorola.wimax
 share/wireshark/radius/dictionary.navini
 share/wireshark/radius/dictionary.netscreen
 share/wireshark/radius/dictionary.networkphysics
@@ -242,12 +188,16 @@ share/wireshark/radius/dictionary.rfc3576
 share/wireshark/radius/dictionary.rfc3580
 share/wireshark/radius/dictionary.rfc4072
 share/wireshark/radius/dictionary.rfc4372
+share/wireshark/radius/dictionary.rfc4603
 share/wireshark/radius/dictionary.rfc4675
 share/wireshark/radius/dictionary.rfc4679
 share/wireshark/radius/dictionary.rfc4818
 share/wireshark/radius/dictionary.rfc4849
 share/wireshark/radius/dictionary.rfc5090
 share/wireshark/radius/dictionary.rfc5176
+share/wireshark/radius/dictionary.rfc5580
+share/wireshark/radius/dictionary.rfc5607
+share/wireshark/radius/dictionary.rfc5904
 share/wireshark/radius/dictionary.riverstone
 share/wireshark/radius/dictionary.roaringpenguin
 share/wireshark/radius/dictionary.shasta
@@ -262,8 +212,7 @@ share/wireshark/radius/dictionary.telebit
 share/wireshark/radius/dictionary.telkom
 share/wireshark/radius/dictionary.trapeze
 share/wireshark/radius/dictionary.tropos
-share/wireshark/radius/dictionary.tunnel
-share/wireshark/radius/dictionary.unisphere
+share/wireshark/radius/dictionary.ukerna
 share/wireshark/radius/dictionary.unix
 share/wireshark/radius/dictionary.usr
 share/wireshark/radius/dictionary.utstarcom
@@ -272,10 +221,11 @@ share/wireshark/radius/dictionary.versanet
 share/wireshark/radius/dictionary.vqp
 share/wireshark/radius/dictionary.walabi
 share/wireshark/radius/dictionary.waverider
+share/wireshark/radius/dictionary.wichorus
 share/wireshark/radius/dictionary.wimax
+share/wireshark/radius/dictionary.wimax.wichorus
 share/wireshark/radius/dictionary.wispr
 share/wireshark/radius/dictionary.xedia
-share/wireshark/radius/dictionary.xylan
 share/wireshark/radius/dictionary.zyxel
 share/wireshark/randpkt.html
 share/wireshark/rawshark.html
