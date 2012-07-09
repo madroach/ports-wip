@@ -1,35 +1,35 @@
 # $OpenBSD$
 
-COMMENT=	Objective Caml Internet protocols and helper data structures
-CATEGORIES=	devel www mail
+COMMENT =	Objective Caml Internet protocols and helper data structures
+CATEGORIES =	devel www mail
 
-V=		3.5.1
-DISTNAME=	ocamlnet-$V
+V =		3.5.1
+DISTNAME =	ocamlnet-${V}
 
-MASTER_SITES=	http://download.camlcity.org/download/
+MASTER_SITES =	http://download.camlcity.org/download/
 
-HOMEPAGE=	http://projects.camlcity.org/projects/ocamlnet.html
+HOMEPAGE =	http://projects.camlcity.org/projects/ocamlnet.html
 
 # Mostly zlib/png, http server module is GPL
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_PACKAGE_FTP =		Yes
+PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_DISTFILES_FTP =		Yes
+PERMIT_DISTFILES_CDROM =	Yes
 
-MODULES=	lang/ocaml
+MODULES =	lang/ocaml
 
-RUN_DEPENDS=	devel/ocaml-pcre
-BUILD_DEPENDS=	${RUN_DEPENDS} sysutils/findlib
-LIB_DEPENDS=	devel/pcre
-WANTLIB=	c curses m pthread pcre
+RUN_DEPENDS =	devel/ocaml-pcre
+BUILD_DEPENDS =	${RUN_DEPENDS} sysutils/findlib
+LIB_DEPENDS =	devel/pcre
+WANTLIB =	c curses m pthread pcre
 
-CONFIGURE_STYLE=simple
-CONFIGURE_ARGS=	-with-nethttpd
+CONFIGURE_STYLE = simple
+CONFIGURE_ARGS = -with-nethttpd
 
-NO_REGRESS=	Yes
-USE_GMAKE=	Yes
+NO_REGRESS =	Yes
+USE_GMAKE =	Yes
 
-ALL_TARGET=	all ${MODOCAML_NATIVE:S/Yes/opt/:S/No//}
+ALL_TARGET =	all ${MODOCAML_NATIVE:S/Yes/opt/:S/No//}
 
 
 pre-fake:

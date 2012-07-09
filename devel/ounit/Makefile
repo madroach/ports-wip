@@ -1,35 +1,35 @@
 # $OpenBSD$
 
-COMMENT=	Unit test framework for OCaml
-CATEGORIES=	devel
+COMMENT =	Unit test framework for OCaml
+CATEGORIES =	devel
 
-V=		1.1.1
+V =		1.1.1
 # $N changes with every release, too.
-N=		762
-DISTNAME=	ounit-$V
+N =		762
+DISTNAME =	ounit-${V}
 
-MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/$N/
+MASTER_SITES =	http://forge.ocamlcore.org/frs/download.php/${N}/
 
-HOMEPAGE=	http://ounit.forge.ocamlcore.org/
+HOMEPAGE =	http://ounit.forge.ocamlcore.org/
 
-MAINTAINER=	Christopher Zimmermann <madroach@gmerlin.de>
+MAINTAINER =	Christopher Zimmermann <madroach@gmerlin.de>
 
 # LGPL >=2.1
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_PACKAGE_FTP =		Yes
+PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_DISTFILES_FTP =		Yes
+PERMIT_DISTFILES_CDROM =	Yes
 
-MODULES=	lang/ocaml
+MODULES =	lang/ocaml
 
-BUILD_DEPENDS=	${RUN_DEPENDS} sysutils/findlib
+BUILD_DEPENDS =	${RUN_DEPENDS} sysutils/findlib
 
-CONFIGURE_STYLE=simple
-CONFIGURE_ARGS=	--destdir ${WRKINST}
+CONFIGURE_STYLE = simple
+CONFIGURE_ARGS = --destdir ${WRKINST}
 
-MAKE_ENV=	TERM=${TERM}
+MAKE_ENV =	TERM=${TERM}
 
-REGRESS_TARGET=	test
+REGRESS_TARGET = test
 
 
 pre-configure:
