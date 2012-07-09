@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	Unit test framework for OCaml
+COMMENT =	unit test framework for OCaml
 CATEGORIES =	devel
 
 V =		1.1.1

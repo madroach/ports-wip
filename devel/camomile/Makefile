@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	Unicode library for objective caml
+COMMENT =	unicode library for objective caml
 
 CATEGORIES =	devel
 

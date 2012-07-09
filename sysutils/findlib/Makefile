@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.20 2011/12/21 21:32:37 avsm Exp $
 
-COMMENT =	Objective Caml package manager
+COMMENT =	OCaml package manager
 CATEGORIES =	sysutils
 DISTNAME =	findlib-1.3.1
 MASTER_SITES =	http://download.camlcity.org/download/
