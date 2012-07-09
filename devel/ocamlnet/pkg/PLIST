@@ -310,6 +310,7 @@ lib/ocaml/site-lib/netstring/cmapr.windows1255.netdb
 lib/ocaml/site-lib/netstring/cmapr.windows1256.netdb
 lib/ocaml/site-lib/netstring/cmapr.windows1257.netdb
 lib/ocaml/site-lib/netstring/cmapr.windows1258.netdb
+lib/ocaml/site-lib/netstring/libnetaccel_c.a
 lib/ocaml/site-lib/netstring/mimestring.cmi
 lib/ocaml/site-lib/netstring/mimestring.mli
 lib/ocaml/site-lib/netstring/netaccel.cma

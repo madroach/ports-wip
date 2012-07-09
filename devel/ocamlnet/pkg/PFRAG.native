@@ -43,7 +43,6 @@ lib/ocaml/site-lib/netshm/netshm.a
 lib/ocaml/site-lib/netshm/netshm.cmxa
 lib/ocaml/site-lib/netshm/netshm.p.a
 lib/ocaml/site-lib/netshm/netshm.p.cmxa
-lib/ocaml/site-lib/netstring/libnetaccel_c.a
 lib/ocaml/site-lib/netstring/netbuffer.cmx
 lib/ocaml/site-lib/netstring/netbuffer.o
 lib/ocaml/site-lib/netstring/netbuffer.p.cmx
