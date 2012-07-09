@@ -3,8 +3,7 @@
 COMMENT =	OCaml Internet protocols and helper data structures
 CATEGORIES =	devel www mail
 
-V =		3.5.1
-DISTNAME =	ocamlnet-${V}
+DISTNAME =	ocamlnet-3.5.1
 
 MASTER_SITES =	http://download.camlcity.org/download/
 

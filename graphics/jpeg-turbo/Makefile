@@ -9,7 +9,7 @@ SHARED_LIBS +=	turbojpeg	0.0
 CATEGORIES =	graphics
 HOMEPAGE =	http://www.libjpeg-turbo.org/
 
-PKGNAME =	jpeg-$V-turbo
+PKGNAME =	jpeg-${V}-turbo
 
 # BSD-style
 PERMIT_DISTFILES_CDROM =	Yes
@@ -18,7 +18,7 @@ PERMIT_PACKAGE_FTP =		Yes
 PERMIT_DISTFILES_FTP =		Yes
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=libjpeg-turbo/}
-DISTFILES =	libjpeg-turbo-$V.tar.gz
+DISTFILES =	libjpeg-turbo-${V}.tar.gz
 
 WANTLIB =	c m
 

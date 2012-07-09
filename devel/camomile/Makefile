@@ -4,8 +4,7 @@ COMMENT =	unicode library for objective caml
 
 CATEGORIES =	devel
 
-V =		0.8.3
-DISTNAME =	camomile-${V}
+DISTNAME =	camomile-0.8.3
 EXTRACT_SUFX =	.tar.bz2
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=camomile/}
