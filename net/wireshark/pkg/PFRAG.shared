@@ -1,4 +1,0 @@
-@comment $OpenBSD$
-@lib lib/libwireshark.so.${LIBwireshark_VERSION}
-@lib lib/libwiretap.so.${LIBwiretap_VERSION}
-@lib lib/libwsutil.so.${LIBwsutil_VERSION}
