@@ -7,6 +7,9 @@ lib/ocaml/site-lib/pcre/libpcre_stubs.a
 lib/ocaml/site-lib/pcre/pcre.cma
 lib/ocaml/site-lib/pcre/pcre.cmi
 lib/ocaml/site-lib/pcre/pcre.mli
+@comment lib/ocaml/site-lib/stublibs
+@comment lib/ocaml/stublibs/
+@comment lib/ocaml/stublibs/dllpcre_stubs.so.owner
 share/doc/ocaml-pcre/
 share/doc/ocaml-pcre/LICENSE
 share/doc/ocaml-pcre/README.txt
